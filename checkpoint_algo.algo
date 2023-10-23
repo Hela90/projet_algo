@@ -1,0 +1,26 @@
+ALGORITHM Check_algo
+VAR
+    car : CHAR;
+    cc, cw, cv : INTEGER := 0;
+BEGIN
+    REPEAT
+        Write("Donnez un caractere : ");
+        Read(car);
+
+        cc := cc + 1;
+
+        IF (car = ' ') THEN
+            cw := cw + 1;
+        END_IF
+
+        IF (car = 'A' OR car = 'E' OR car = 'I' OR car = 'O' OR car = 'U' OR car = 'Y' car = 'a' OR car = 'e' OR car = 'i' OR car = 'o' OR car = 'u' OR car = 'y') THEN
+            cv := cv + 1;
+        END_IF
+    UNTIL (car = '.');
+
+    Write("Le nombre de caractere est ", cc);
+    Write("Le nombre de mot est ", cw);
+    Write("Le nombre de voyelle est ", cv);
+
+    
+END
